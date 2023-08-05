@@ -17,3 +17,17 @@ Output: 1
 Example 3:
 Input: nums = [1,3,5,6], target = 7
 Output: 4
+
+
+class Solution {
+  // Tc: O(n) 
+  //Linear search solution
+  //Sc: O(1)
+    public int searchInsert(int[] nums, int target) {
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            if (nums[i] >= target) {
+                return i;
+            }
+        }
+        return n;
