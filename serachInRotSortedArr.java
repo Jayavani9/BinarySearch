@@ -1,4 +1,5 @@
 class Solution {
+    //Tc: O(logn)   Sc: O(1)
     public int search(int[] nums, int target) {
         int l = 0;
         int h = nums.length-1;
