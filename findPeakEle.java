@@ -16,3 +16,17 @@ class Solution {
         return right;
     }   
 }
+
+
+//Using a linear Search
+class Solution {
+    public int findPeakElement(int[] nums) {
+        //Tc: O(n) Sc: O(1) 
+        int n = nums.length;
+        for(int i = 0; i < n-1; i++)
+        {
+            if(nums[i] > nums[i+1]) return i;
+        }
+        return n-1;
+    }   
+}
